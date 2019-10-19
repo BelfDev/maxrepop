@@ -2,22 +2,24 @@ import {Navigation} from 'react-native-navigation';
 import {Images} from './src/resources';
 import LaunchScreen from './src/screens/LaunchScreen';
 import OnboardingScreen from './src/screens/OnboardingScreen';
+import ProfileScreen from './src/screens/ProfileScreen';
 
 Navigation.registerComponent('maxrepop.LaunchScreen', () => LaunchScreen);
 Navigation.registerComponent(
   'maxrepop.OnboardingScreen',
   () => OnboardingScreen,
 );
+Navigation.registerComponent('maxrepop.ProfileScreen', () => ProfileScreen);
 
 const bottomTabs = {
   children: [
     {
       component: {
-        name: 'maxrepop.LaunchScreen',
+        name: 'maxrepop.ProfileScreen',
         options: {
           bottomTab: {
             icon: Images.circle,
-            text: 'Tab 1',
+            text: 'Profile',
           },
         },
       },
@@ -28,7 +30,7 @@ const bottomTabs = {
         options: {
           bottomTab: {
             icon: Images.tribe,
-            text: 'Tab 2',
+            text: 'Tribe',
           },
         },
       },
