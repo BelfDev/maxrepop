@@ -44,7 +44,7 @@ const _renderSeparator = () => {
   return <View style={styles.itemSeparator} />;
 };
 
-export default class ActionsScreen extends Component {
+export default class TribeScreen extends Component {
   render() {
     return (
       <SafeAreaView style={styles.container}>
