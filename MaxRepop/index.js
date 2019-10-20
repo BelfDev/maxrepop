@@ -5,6 +5,7 @@ import OnboardingScreen from './src/screens/OnboardingScreen';
 import ProfileScreen from './src/screens/ProfileScreen';
 import ActionsScreen from './src/screens/ActionsScreen';
 import TribeScreen from './src/screens/TribeScreen';
+import DecisionScreen from './src/screens/DecisionScreen';
 
 Navigation.registerComponent('maxrepop.LaunchScreen', () => LaunchScreen);
 Navigation.registerComponent(
@@ -14,6 +15,7 @@ Navigation.registerComponent(
 Navigation.registerComponent('maxrepop.ActionsScreen', () => ActionsScreen);
 Navigation.registerComponent('maxrepop.ProfileScreen', () => ProfileScreen);
 Navigation.registerComponent('maxrepop.TribeScreen', () => TribeScreen);
+Navigation.registerComponent('maxrepop.DecisionScreen', () => DecisionScreen);
 
 const bottomTabs = {
   children: [
@@ -30,7 +32,7 @@ const bottomTabs = {
     },
     {
       component: {
-        name: 'maxrepop.ActionsScreen',
+        name: 'maxrepop.DecisionScreen',
         options: {
           bottomTab: {
             icon: Images.action,
