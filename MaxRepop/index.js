@@ -32,7 +32,18 @@ const bottomTabs = {
     },
     {
       component: {
-        name: 'maxrepop.DecisionScreen',
+        name: 'maxrepop.ActionsScreen',
+        options: {
+          bottomTab: {
+            icon: Images.action,
+            text: 'Actions',
+          },
+        },
+      },
+    },
+    {
+      component: {
+        name: 'maxrepop.ActionsScreen',
         options: {
           bottomTab: {
             icon: Images.action,
