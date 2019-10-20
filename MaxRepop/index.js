@@ -30,7 +30,7 @@ const bottomTabs = {
     },
     {
       component: {
-        name: 'maxrepop.ActionsScreen',
+        name: 'maxrepop.DecisionScreen',
         options: {
           bottomTab: {
             icon: Images.action,
